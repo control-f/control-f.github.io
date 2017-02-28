@@ -15,22 +15,52 @@
 	}	
 }
 
+body {
+
+background-color: #f4f4f4;
+}
 
 #top-background {
-	background-color:black;
+    background: #66FFC0; /* For browsers that do not support gradients */
+    background: -webkit-linear-gradient( #66FFC0, #47FFC2); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(#66FFC0, #47FFC2)); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(#66FFC0, #47FFC2)); /* For Firefox 3.6 to 15 */
+    background: linear-gradient( #66FFC0, #47FFC2)); /* Standard syntax */
+	opacity:1.1;	
 	width:100vw;
 	height:30vh;
+	position:relative;
+	z-index:-1;
+}
+
+#title-text {
+
+ margin-left: 29%;
+ font-size: 300%;
+ position:absolute;
+ bottom:0;
+ color:white;
+ 
+}
+
+#division-bar {
+
+background-color: #e8e9ea; 
+
+height:4px; 
+width:100vw;
+
 }
 
 #profile-image { 
 
-	margin-top: -5%;
+	margin-top: -9%;
 	margin-left:7%; 
-	width: 18%;
-	height:25%;
+	width: 22%;
+	height: 18%;
 	border: 4px solid #e8e9ea;
 
-	border-radius: 15px 0px 15px 0px;
+	border-radius: 10px;
 
 }
 
@@ -40,7 +70,7 @@
 	background-color: #e8e9ea;
 	height: 25vh;
 	margin-radius: 10% 0px 10% 0px; 
-	padding: 2%;
+	padding: 1%;
 	vertical-align: middle;
 	margin-top: 5vh;
 	
@@ -53,28 +83,129 @@
 	background-color: #e8e9ea; 
 	height: 25vh;
 	margin-radius: 0px 10px 0px 10px;
-	padding: 2%;
+	padding: 1%;
 	vertical-align: middle;
 	margin-top:5vh;
 }
 
-.top-box {
-	 
-	margin-top: -5vh;
-	z-index: -1;
-}
 
-#about-box {
 
-	padding-top: 6vh;
 
-}
 
 .break {
 
 	background-color: red;
 	height:1%;
 }
+
+
+.edit-icon {
+
+float: right;
+
+}
+
+.edit-icon-first {
+
+float: right;
+
+}
+
+#social-media {
+
+height:15vw;
+margin-bottom: 15vh;
+}
+
+.sub-heading {
+float:center;
+text-align: center;
+font-size: 130%;
+padding-bottom:1px;
+border-bottom: solid 1px #66FFC0;
+
+}
+
+
+
+
+
+@media screen and (max-width: 1196px) {
+
+	#top-background {
+		
+		height:28vh;		
+	}
+	#profile-image { 
+	
+		width: 25%;
+		height: 19%;
+
+	}
+	#title-text {
+	
+		margin-left: 32%;
+	}
+	
+
+	
+}
+
+@media screen and (max-width: 1065px) {
+
+	
+	#title-text {
+	
+		font-size:260%;
+	}
+	
+
+}
+
+@media screen and (max-width: 880px) {
+	
+
+	#top-background {
+		
+		height:26vh;		
+	}
+	#profile-image { 
+	
+		width: 27%;
+		height: 21%;
+
+	}
+	#title-text {
+	
+		margin-left: 34%;
+	}
+	
+
+
+}
+
+@media screen and (max-width: 767px) {
+	
+	#top-background {
+		
+		height:23vh;		
+	}
+	#profile-image { 
+	
+		width: 31%;
+		height: 26%;
+
+	}
+	#title-text {
+	
+		margin-left: 38%;
+		font-size:200%;
+	}
+	
+	
+
+}
+
 
 
 
